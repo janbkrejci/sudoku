@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sudoku</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="help">
+    <h1 style="text-align: center">Sudoku</h1>
+    <table cellspacing="1em">
+      <thead>
+        <tr>
+          <th align="left">Key</th>
+          <th align="left">Function</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Space</td>
+          <td>Auto solve cells with single hint</td>
+        </tr>
+        <tr>
+          <td>Backspace&nbsp;&nbsp;</td>
+          <td>Undo last move</td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>Generate new puzzle</td>
+        </tr>
+        <tr>
+          <td>H</td>
+          <td>Toggle pencil marks (hints)</td>
+        </tr>
+        <tr>
+          <td>L</td>
+          <td>Load board from given string of 81 digits</td>
+        </tr>
+        <tr>
+          <td>S</td>
+          <td>Show current board as string of 81 digits</td>
+        </tr>
+        <tr>
+          <td>R</td>
+          <td>Reset board to last loaded state</td>
+        </tr>
+        <tr>
+          <td>Arrow keys</td>
+          <td>Move selection around</td>
+        </tr>
+        <tr>
+          <td>Escape or 0</td>
+          <td>Clear selected cell</td>
+        </tr>
+        <tr>
+          <td>1-9</td>
+          <td>Set value of selected cell</td>
+        </tr>
+        <tr>
+          <td><b>Return</b></td>
+          <td><b>Show/hide this help</b></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="container" class="prevent-select">
+    <ul id="grid"></ul>
+  </div>
+
+  <div class="note">
+    Your browser doesn't support CSS Grid.
+    You'll need <a href="http://gridbyexample.com/browsers/">a
+      browser that does</a> to use this app.
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
